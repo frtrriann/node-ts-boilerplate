@@ -4,10 +4,13 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: [
-    "@typescript-eslint"
+  plugins: ["@typescript-eslint", "prettier"],
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
   ],
-  extends: ["eslint:recommended","plugin:@typescript-eslint/recommended"],
   env: {
     node: true,
   },

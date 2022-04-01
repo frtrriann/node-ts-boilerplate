@@ -1,1 +1,1 @@
-console.warn(43)
+import "dotenv/config";
