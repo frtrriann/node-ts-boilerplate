@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM node:lts
+FROM node:lts-alpine
 
 WORKDIR /app
 
